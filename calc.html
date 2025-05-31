@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>
+    Calculator
+  </title>
+</head>
+
+<body>
+  <div>
+    <form>
+
+      <label>Enter First Number:</label>
+      <input id="first"></br>
+      </br>
+      <label>Enter Second Number:</label>
+      <input id="second"></br>
+      </br>
+      <select id="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>/</option>
+        <option>*</option>
+      </select>
+
+      <button onclick="calcu()">Submit</button>
+      <h2>Result:<span id="resulttext"></span></h2>
+
+    </form>
+    <A href="./kavya.html">
+      <button>GO BACK</button>
+    </A>
+
+  </div>
+  <script>
+
+    function calcu() {
+      let n1 = parseInt(document.getElementById("first").value);
+      let n2 = parseInt(document.getElementById("second").value);
+      let op = document.getElementById("operator").value;
+
+      var result = 0;
+      if (op == "+") {
+        result = Number(n1) + Number(n2);     /*if parseint was not mentioned */
+      }
+      else if (op == "-") {
+        result = n1 - n2;
+      }
+      else if (op == "*") {
+        result = n1 * n2;
+      }
+      else if (op == "/") {
+        result = n1 / n2;
+      }
+      document.getElementById("resulttext").innerText = result;
+      event.preventDefault();
+    }
+
+
+
+  </script>
+</body>
+
+</html>

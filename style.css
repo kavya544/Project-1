@@ -1,0 +1,137 @@
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(121, 84, 37);
+    background-image: url("1920x1080-aesthetic-glrfk0ntspz3tvxg.jpg");
+   
+}
+
+.nav {
+    background-color: rgb(36, 27, 27);
+    display: flex;
+    margin: 10px 20px 20px 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+
+
+}
+
+.other {
+    background-color: rgb(208, 255, 255);
+}
+
+h1 {
+    color: rgb(70, 25, 25);
+    
+}
+
+.nav li {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+  
+    
+
+}
+.nav li:hover{
+    transform: translateY(-5px);
+    transform: .3s;
+    color: brown;
+}
+img:hover{
+  transform: scale(90%);
+  transition: .3s ease;
+   animation: rotate  5s linear infinite;
+}
+form{
+    border:dashed 2px brown;
+    background-color: rgb(94, 117, 111);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+
+}
+button{
+    
+    margin-top: 25px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(95, 0, 0);
+    border: solid brown;
+}
+textarea{
+    margin-top: 20px;
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    scroll-margin: 65px;
+    
+}
+#neee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+    scroll-margin: 65px;
+}
+#mee{
+    height: 80vh;
+    scroll-margin: 65px;
+   
+}
+details{
+    font-family: "Quicksand", sans-serif;
+    font-size: 30px;
+
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(205, 255, 255);
+    margin-bottom: 5px;
+
+}
+summary{
+    font-size: 40px;
+}
+.b{
+    border: solid rgb(0, 0, 0);
+    padding: .2px;
+    
+  
+}
+#kee{
+     height: 50vh;
+     scroll-margin: 65px;
+}
+
+
+
+@keyframes rotate{
+    from{
+       transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+          
+    }
+}
+
